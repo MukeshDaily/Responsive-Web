@@ -1,9 +1,11 @@
 function goNext(){ 
 	document.getElementById("feedback").innerHTML = " You are partially correct. Apart from the selected option, SEBI has introduced some other changes which we will be discussing in this module. <br /><strong> Welcome to the module, SEBI Changes Affecting Distribution</strong> ";
-}
+	document.location.href="#feedback";
+	}
 function fiveNext(){ 
 	document.getElementById("feedback").innerHTML = "You are right. Apart from these options,SEBI has introduced some other changes which we will be discussing in this module.<br /><strong> Welcome to the module, SEBI Changes Affecting Distribution</strong> "; 
-}
+	document.location.href="#feedback";
+	}
 function displayFeedback(boxid){
 	var feedbackData;
 	switch(boxid){
