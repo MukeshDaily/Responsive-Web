@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<title>Responsive Web Level-1 - Mukesh Mawaliya</title>
+		<link rel="stylesheet" type="text/css" href="mawaliya.css">	
+		
+		<script src="//ajax.googleapis.com/ajax/libs/dojo/1.8.3/dojo/dojo.js" data-dojo-config="isDebug:1, async:1"></script>		
+		<script>
+			require(["dojox/mobile/parser", "dojox/mobile", "dojox/mobile/deviceTheme", 
+			"dojox/mobile/compat", "dojox/mobile/TabBar", "dojox/mobile/Container", "dojox/mobile/SwapView", "dojox/mobile/ToolBarButton",
+			"dojox/mobile/ScrollableView", "dojox/mobile/Button", "dojox/mobile/CheckBox", "dojox/mobile/RadioButton", "dojox/widget/Dialog",
+			"dojo/domReady!"],
+			function(parser) {
+				parser.parse();
+			});
+		</script>
+		
+</head>
+<body>        	
+		<div id="screen1" data-dojo-type="dojox.mobile.View" data-dojo-props="selected: true">
+		
+			<h1 data-dojo-type="dojox.mobile.Heading">A Quick Question
+			<span data-dojo-type="dojox/mobile/ToolBarButton" data-dojo-props='arrow:"right", label:"Next", moveTo:"screen2"' style="float:right;"></span>
+			</h1>							 
+						 
+				<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+    Entry loads for all Mutual Fund schemes were abolished in August 2009 by SEBI. 
+	This resulted in lot of Mutual Fund Distributors/Independent Financial Advisers quitting the Mutual 
+	Fund distribution business. 
+	After realizing that Mutual Fund industry is not growing and the investments are declining, 
+	SEBI issued guidelines to "re-energise" the Mutual Fund Industry.
+	<p><strong>Can you identify some of the changes issued by SEBI from the options given below?</strong></p>
+
+<input type="radio" name="group" data-dojo-type="dojox/mobile/RadioButton"
+data-dojo-props='checked:false, value:"1", onChange:function(checked){ if(checked)goNext(); }' />
+<label>Higher expense ratios of 45 basis points w.e.f. 1st Oct 2012 is allowed to benefit investors.</label> <br /><br />
+
+<input type="radio" name="group" data-dojo-type="dojox/mobile/RadioButton" 
+data-dojo-props='checked:false, value:"2", onChange:function(checked){ if(checked)goNext(); }' />
+<label>Service tax will be levied on the investment and advisory fees as applicable to the scheme.
+</label> <br /><br />	   	  
+
+<input type="radio" name="group" data-dojo-type="dojox/mobile/RadioButton" 
+data-dojo-props='checked:false, value:"3", onChange:function(checked){ if(checked)goNext(); }' />
+<label>Teachers, post office agents and retired Government employees will be allowed to distribute Mutual Fund schemes.
+</label> <br /><br />
+
+<input type="radio" name="group" data-dojo-type="dojox/mobile/RadioButton" 
+data-dojo-props='checked:false, value:"4", onChange:function(checked){ if(checked)goNext(); }' />
+<label>Introduction of Direct Plan with effect from 1st Jan 2013 for the benefit of the investors.
+</label> <br /><br />
+
+<input type="radio" name="group" data-dojo-type="dojox/mobile/RadioButton" 
+data-dojo-props='checked:false, value:"5", onChange:function(checked){ if(checked)fiveNext(); }' />
+<label>All the above
+</label> <br /><br />
+
+</div>
+	<h2 data-dojo-type="dojox.mobile.RoundRectCategory">Feedback</h2>
+	<div id="feedback" data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+		Please Selct an option.		
+	</div>	
+		
+</div>
+
+<div id="screen2" data-dojo-type="dojox.mobile.View">
+			<h1 data-dojo-type="dojox.mobile.Heading" data-dojo-props="back:'Back', moveTo:'screen1'">Investments Categories
+			<span data-dojo-type="dojox/mobile/ToolBarButton" data-dojo-props='arrow:"right", label:"Next", moveTo:"screen3"' style="float:right;"></span>
+			</h1>
+		<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>			
+			<p>Before we proceed to know about investments categories, let us first understand what Securitization is. </p>
+<p>Securitization is the process by which a company packages its illiquid assets as a security. For example, when a company makes an initial public offering, it effectively packages the company's ownership into a certain number of stock certificates. Securities are backed by an asset, such as equity, or debt, such as a portion of a mortgage. Securitization allows a company access to greater funding to expand its operations or investments. Most funds have a particular strategy they focus on when investing. 
+</p>
+<p>Click each highlighted tab to know the policies and regulations for various Investments.</p>		
+		
+		<div class="s2page">
+		<div class="imageMapt">
+			<img src="s2.png" alt="" />
+			<div class="hotspotst">
+				<div title="Real Estate"> <a href="#feedback2" class="p1" rel="nofollow" onclick="displayFeedback(2);"></a> </div>
+				<div title="Short Term Deposits"> <a href="#feedback2" class="p2" rel="nofollow" onclick="displayFeedback(4);"></a> </div>
+				<div title="Investments"> <a href="#feedback2" class="p3" rel="nofollow" onclick="displayFeedback(1);"></a> </div>
+				<div title="International Funds"> <a href="#feedback2" class="p4" rel="nofollow" onclick="displayFeedback(3);"></a> </div>
+				<div title="Derivatives"> <a href="#feedback2" class="p5" rel="nofollow" onclick="displayFeedback(5);"></a> </div>
+				<div title="Repos in Corporate Debt Securities"> <a href="#feedback2" class="p6" rel="nofollow" onclick="displayFeedback(6);"></a> </div>	
+			</div>
+		</div>		
+	</div>
+		
+		</div>
+		
+		<h2 data-dojo-type="dojox.mobile.RoundRectCategory">Feedback</h2>
+		<div id="feedback2" data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+			Please Click On A Tab	
+		</div>		
+</div>
+			
+		<div id="screen3" data-dojo-type="dojox.mobile.View">
+			<h1 data-dojo-type="dojox.mobile.Heading" data-dojo-props="back:'Back', moveTo:'screen2'">Legal Structure</h1>			
+			<div data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>			
+		<p>	SEBI has stipulated the legal structure under which Mutual Funds need to be constituted. The structure has inherent checks and balances to protect the interests of the investors which are briefly described as follows:
+		</p><p>Click each tab to proceed.</p>	
+
+		
+		
+		<div class="s3page">
+		<div class="imageMap">
+			<img src="s3.png" alt="" />
+			<div class="hotspots">
+				<div title="Interval Funds"> <a href="#feedback3" class="p1" rel="nofollow" onclick="showFinal(3);"></a> </div>
+				<div title="Additional Plans"> <a href="#feedback3" class="p2" rel="nofollow" onclick="showFinal(5);"></a> </div>
+				<div title="Infrastructure Debt Funds"> <a href="#feedback3" class="p3" rel="nofollow" onclick="showFinal(1);"></a> </div>
+				<div title="Number of Investors"> <a href="#feedback3" class="p4" rel="nofollow" onclick="showFinal(4);"></a> </div>
+				<div title="FMPs"> <a href="#feedback3" class="p5" rel="nofollow" onclick="showFinal(2);"></a> </div>							
+			</div>
+		</div>		
+	</div>
+		
+		</div>
+		
+		<h2 data-dojo-type="dojox.mobile.RoundRectCategory">Feedback</h2>
+		<div id="feedback3" data-dojo-type="dojox/mobile/RoundRect" data-dojo-props='shadow:true'>
+			Please Click each tab to proceed			
+		</div>
+				
+		</div>
+		
+
+<ul data-dojo-type="dojox.mobile.TabBar"
+    data-dojo-props='iconBase:"tab-icons.png"'>
+  <li data-dojo-type="dojox.mobile.TabBarButton"
+      data-dojo-props='iconPos1:"0,0,29,29",
+                       iconPos2:"29,0,29,29",
+                       moveTo:"screen1", selected:true'>1</li>
+  <li data-dojo-type="dojox.mobile.TabBarButton"
+      data-dojo-props='iconPos1:"0,29,29,29",
+                       iconPos2:"29,29,29,29",
+                       moveTo:"screen2"'>2</li>
+  <li data-dojo-type="dojox.mobile.TabBarButton"
+      data-dojo-props='iconPos1:"0,58,29,29",
+                       iconPos2:"29,58,29,29",
+                       moveTo:"screen3"'>3</li> 
+</ul>
+
+		<script src="mawaliya.js"></script>
+	</body>
+</html>
